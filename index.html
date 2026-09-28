@@ -6,6 +6,15 @@
 <body>
 <h1>🤖 JEWEL AI</h1>
 <p>Your Personal AI Assistant</p>
-<button>Start Jewel AI</button>
+<input id="question" placeholder="Ask Jewel AI anything...">
+<button onclick="askJewel()">Ask</button>
+<p id="answer"></p>
+<script>
+function askJewel() {
+let q = document.getElementById("question").value;
+document.getElementById("answer").innerText =
+"Jewel AI received: " + q;
+}
+</script>
 </body>
 </html>
